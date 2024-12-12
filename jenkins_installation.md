@@ -64,7 +64,9 @@ sudo yum install java-17-amazon-corretto-headless -y
 ```
 sudo su
 ```
+sudo useradd jenkins-slave1
 ```
+sudo passwd jenkins-slave1
 sudo vi /etc/sudoers
 ```
 ```
