@@ -100,7 +100,9 @@ cd /var/lib/jenkins/
 sudo chmod 777 .ssh
 ```
 ```
-sudo ssh-keyscan -H  private-ipaddress-slave-node >>/var/lib/jenkins/.ssh/known_hosts
+sudo sh -c 'ssh-keyscan -H  private-ipaddress-slave-node >>/var/lib/jenkins/.ssh/known_hosts'
+sudo sh -c 'ssh-keyscan -H 172.31.1.70 >> /var/lib/jenkins/.ssh/known_hosts'
+
 ```
 ```
 cd .ssh
